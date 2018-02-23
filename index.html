@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Quote Machine</title>
+		<script src="/analytics/analytics.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Calligraffitti|Caveat|Just+Me+Again+Down+Here|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>The Random Quote Machine</h1>
+		</header>
+		
+		<section>
+			<!-- This is the quote-button -->
+			<p>Press the button to get a random quote.</p>
+			<button id="quote-button">Get a quote!</button>
+			
+			<!-- This is the quote-area -->
+			<div id="quote">
+				<!--img id="quote-note" src="img/old-note-transparent-short-small.png" alt="Quote-note"-->
+				<p id="quote-field">The quote will show up here</p>
+			</div>
+			
+			<!-- This is the Tweet-button -->
+			<a id="twitter-button" href="https://twitter.com/intent/tweet?text=Hello%20world"><button id="tweet-button">Tweet</button></a>
+			
+			<!-- This is the twitter-feed -->
+			<div id="twitter-feed">
+				<h2>Other quotes from Twitter</h2>
+				<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hashtag/quotes" data-widget-id="872930648964702212">#quotes Tweets</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+		</section>
+		
+		<!-- This is the footer -->
+		<footer>
+			<ul>
+				<li>a Free Code Camp project</li>
+				<li>by Lars Vidar Nordli</li>
+				<li><a href=# target="_blank" id="social1">#social1</a></li>
+			</ul>
+		</footer>
+		<script src="random_quote.js"></script>  
+	</body>
+</html>

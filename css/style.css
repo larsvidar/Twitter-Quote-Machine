@@ -1,0 +1,169 @@
+/***** General layout *****/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	color: #eee;
+	font-size: 30px;
+	font-family: 'Caveat', cursive, Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 0;
+	background-color: #292f33;
+}
+
+
+/***** Header *****/
+
+header {
+font-family: 'Calligraffitti', cursive;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 1px 40% 0 0;
+	border-bottom: solid 5px #005;
+	background-color: #1b95e0
+}
+
+h1 {
+	margin: 10px 0 0;
+}
+
+
+/***** Quote-section *****/
+
+section {
+	margin-top: 110px;
+}
+
+/*---Buttons---*/
+button {
+	color: #ddd;
+	font-size: 30px;
+	font-family: 'Caveat', cursive;
+	margin-bottom: 20px;
+	padding: 15px;
+	box-shadow: 5px 5px 2px #000;
+	border-radius: 10px;
+	border: none;
+	background-color: #1b95e0;
+}
+
+button:hover {
+	background-color: #3fafff;
+}
+
+button:active {
+	margin: 3px 0 17px 3px;
+	box-shadow: 2px 2px 1px #000;
+}
+
+button:focus {
+	outline:0;
+}
+
+/*---Quote-area---*/
+#quote {
+	width: 1000px;
+	background-image: url("../img/old-note-transparent-short-small.png");
+	background-size: cover;
+	margin: 0 auto 25px;
+}
+
+#quote-field {
+	color: rgba(30,30,30,0.75);
+	font-size: 69px;
+	font-family: 'Just Me Again Down Here', cursive, "Comic Sans MS", cursive, sans-serif;
+	text-align: justify;
+	width: 900px;
+	margin: 0 auto;
+	padding: 10px 50px;
+}
+
+/*---Tweet-button---*/
+#tweet-button {
+	font-family: 'Roboto', sans-serif;
+	border-radius: 10px;
+}
+
+/***** Twitter-feed *****/
+
+h2 {
+	margin-bottom: 0;
+	padding-top: 15px;
+	border-top: solid 5px #005;
+	background-color: #1b95e0;
+}
+
+.twitter-timeline {
+	background-color: #292f33;
+}
+
+/***** Footer *****/
+
+footer {
+	font-size: 0.8em;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 40px;
+	background-color: #1b95e0;
+}
+
+footer li {
+	  display: inline-block;
+	  margin: 0 30px;
+	  padding: 5px 0 20px 0;
+}
+
+footer a:visited {
+	color: #bbb;
+}
+
+ul, li {
+	margin-top: 0;
+}  
+
+/***** Screen-size adjustments *****/
+
+@media (max-width: 1150px) {
+	#quote {
+		width: 750px;
+	}
+	#quote-field {
+		width: 675px;
+		font-size: 50px;
+	}
+	header {
+		font-size: 0.75em;
+		height: 75px;
+	}
+  }
+  
+  @media (max-width: 850px) {
+	#quote {
+		width: 500px;
+	}
+	#quote-field {
+		width: 490px;
+		font-size: 30px;
+	}
+	button {
+		font-size: 0.75em;
+	}
+		header {
+		font-size: 0.5em;
+		height: 55px;
+	}
+	footer li {
+		font-size: 0.7em;
+		margin: 0 20px;
+	}
+	footer {
+		height: 30px;
+	}
+  }
